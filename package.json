@@ -1,11 +1,10 @@
 {
   "name": "restcountries-wrapper",
-  "version": "1.3.0",
+  "version": "2.0.0",
   "description": "A simple API wrapper for the API at https://restcountries.eu",
   "main": "./Library/index.js",
   "dependencies": {
-    "axios": "^0.21.1",
-    "follow-redirects": "^1.13.3"
+    "axios": "^0.21.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
