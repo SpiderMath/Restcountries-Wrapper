@@ -31,11 +31,11 @@ declare type CountryResponse = {
     area: number;
     gini: number;
     timezones: string[];
-    borders: string;
+    borders: string[];
     nativeName: string;
     numericCode: string;
     currencies: CurrencyResponse[];
-    languages: LanguageResponse;
+    languages: LanguageResponse[];
     translations: {
         de: string;
         es: string;
