@@ -42,7 +42,7 @@ type CountryResponse = {
 	nativeName: string,
 	numericCode: string,
 	currencies: CurrencyResponse[],
-	languages: LanguageResponse,
+	languages: LanguageResponse[],
 	translations: {
 		de: string,
 		es: string,
