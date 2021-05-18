@@ -6,14 +6,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.RestCountryWrapper = void 0;
 const Data_1 = __importDefault(require("./Data"));
 class RestCountryWrapper {
-    constructor(updateCache = 24) {
+    constructor() {
+        this.cache = [];
         this.cache = Data_1.default;
-        if (typeof updateCache !== "number")
-            throw new Error("Expected updateCache to be a Number, it is NaN");
-        this.updateCache = updateCache;
-    }
-    _getms() {
-        return this.updateCache * 60 * 60 * 1000;
     }
     /**
      * @param query The name of the country you want to search for
@@ -46,7 +41,7 @@ class RestCountryWrapper {
         return data;
     }
     /**
-     * @param query The ISO code or language name
+     * @param query The Capital query
      * @param sort Whether you want the array to be sorted by the length of the name of the country
      */
     getCountryByCapital(query, sort = false) {

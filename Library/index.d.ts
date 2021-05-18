@@ -1,9 +1,7 @@
-import { Country } from "./Types";
+import { Country, RegionalBloc, Currency, Language, Translations } from "./Types";
 declare class RestCountryWrapper {
-    private updateCache;
     private cache;
-    constructor(updateCache?: number);
-    private _getms;
+    constructor();
     /**
      * @param query The name of the country you want to search for
      * @param sort Whether you want the array to be sorted by the length of the name of the country
@@ -15,7 +13,7 @@ declare class RestCountryWrapper {
      */
     getCountryByLanguage(query: string, sort?: boolean): Country[];
     /**
-     * @param query The ISO code or language name
+     * @param query The Capital query
      * @param sort Whether you want the array to be sorted by the length of the name of the country
      */
     getCountryByCapital(query: string, sort?: boolean): Country[];
@@ -55,5 +53,5 @@ declare class RestCountryWrapper {
     getCountryByTLD(query: string): Country[];
     getAllCountries(): Country[];
 }
-export { RestCountryWrapper };
+export { RestCountryWrapper, Country, RegionalBloc, Currency, Translations, Language };
 //# sourceMappingURL=index.d.ts.map

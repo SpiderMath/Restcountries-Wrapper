@@ -1,17 +1,11 @@
-import { Country } from "./Types";
+import { Country, RegionalBloc, Currency, Language, Translations } from "./Types";
 import Data from "./Data";
 
 class RestCountryWrapper {
-	private updateCache: number;
-	private cache: Country[] = Data;
+	private cache: Country[] = [];
 
-	constructor(updateCache: number = 24) {
-		if(typeof updateCache !== "number") throw new Error("Expected updateCache to be a Number, it is NaN");
-		this.updateCache = updateCache;
-	}
-
-	private _getms() {
-		return this.updateCache * 60 * 60 * 1000;
+	constructor() {
+		this.cache = Data;
 	}
 
 	/**
@@ -47,7 +41,7 @@ class RestCountryWrapper {
 	}
 
 	/**
-	 * @param query The ISO code or language name
+	 * @param query The Capital query
 	 * @param sort Whether you want the array to be sorted by the length of the name of the country
 	 */
 	public getCountryByCapital(query: string, sort: boolean = false) {
@@ -62,7 +56,7 @@ class RestCountryWrapper {
 	}
 
 	/**
-	 * @param query The ISO code or language name
+	 * @param query The ISO code of country
 	 * @param sort Whether you want the array to be sorted by the length of the name of the country
 	 */
 	public getCountryByISOCode(query: string, sort: boolean = false) {
@@ -166,4 +160,4 @@ class RestCountryWrapper {
 	}
 };
 
-export { RestCountryWrapper };
+export { RestCountryWrapper, Country, RegionalBloc, Currency, Translations, Language };
