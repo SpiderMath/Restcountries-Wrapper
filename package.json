@@ -1,6 +1,6 @@
 {
   "name": "restcountries-wrapper",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A simple API wrapper for the API at https://restcountries.eu",
   "main": "./Library/index.js",
   "scripts": {

@@ -1,6 +1,6 @@
 # Restcountries-wrapper
 Hi there 👋  
-This is a simple implementation of the data provided by https://restcountries.eu  
+This is a simple implementation of the data provided by https://restcountries.eu. This implementation works completely without dependencies and also has TypeScript support! 🎉    
 
 > ℹ The package was previously an API Wrapper for [Restcountries](https://restcountries.eu), but I soon noticed that the data there has not been updated in last 4 years. So I decided instead of straining their servers for data, I'd maintain a copy of them in the package. The local data is what is used in the package  
 
