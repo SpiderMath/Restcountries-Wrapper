@@ -18,7 +18,7 @@ declare class RestCountryWrapper {
      */
     getCountryByCapital(query: string, sort?: boolean): Country[];
     /**
-     * @param query The ISO code or language name
+     * @param query The ISO code of country
      * @param sort Whether you want the array to be sorted by the length of the name of the country
      */
     getCountryByISOCode(query: string, sort?: boolean): Country[];
