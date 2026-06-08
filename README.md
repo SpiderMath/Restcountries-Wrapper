@@ -1,3 +1,6 @@
+> [!WARNING]
+> DEPRECATION WARNING: This project has been archived, as it is irrelevant now. The original service got replaced by '[https://countrylayer.com/](https://countrylayer.com/)' sometime between 20 Sept 2021 and 27 Sept 2021 (according to [Wayback Machine](https://web.archive.org/web/20210601000000*/https://restcountries.eu/)). Maybe they also realised that having 4 year old data was a bad idea. Regardless, if you'd wish, you can still technically use it, because the data, while old, is still saved, so the package works nonetheless! I don't intend to support the new service, as it's an umbrella of API services, and I don't use that anymore.
+
 # Restcountries-wrapper
 Hi there 👋  
 This is a simple implementation of the data provided by https://restcountries.eu. This implementation works completely without dependencies and also has TypeScript support! 🎉    
